@@ -19,7 +19,7 @@ function Navbar() {
         <NavLink to="/" className="navbar__logo">
           <span className="navbar__logo-icon">🎓</span>
           <span className="navbar__logo-text">
-            <span className="navbar__logo-name">Greenwood</span>
+            <span className="navbar__logo-name">Government Engineering College Munger</span>
             <span className="navbar__logo-sub">College Portal</span>
           </span>
         </NavLink>

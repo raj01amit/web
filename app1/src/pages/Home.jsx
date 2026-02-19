@@ -83,7 +83,7 @@ function Home() {
             <span className="hero__eyebrow">Est. 1978 · Accredited by NAAC A+</span>
             <h1 className="hero__heading">
               Shape Your Future at<br />
-              <span className="hero__heading-highlight">Greenwood College</span>
+              <span className="hero__heading-highlight">Gec Munger</span>
             </h1>
             <p className="hero__subtext">
               A premier institution offering world-class education, cutting-edge research
