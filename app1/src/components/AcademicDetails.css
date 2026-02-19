@@ -1,0 +1,40 @@
+/* =============================================
+   ACADEMIC DETAILS COMPONENT STYLES
+   ============================================= */
+
+.academic-details {
+  width: 100%;
+}
+
+.academic-details__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(10,22,40,0.08);
+}
+
+.academic-details__icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.academic-details__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.3px;
+}
+
+.academic-details__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .academic-details__grid {
+    grid-template-columns: 1fr;
+  }
+}

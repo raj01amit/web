@@ -1,0 +1,137 @@
+/* =============================================
+   CARD COMPONENT STYLES
+   ============================================= */
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(10,22,40,0.08);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ---- Variants ---- */
+.card--default {
+  background: var(--white);
+}
+
+.card--navy {
+  background: var(--navy);
+  border-color: rgba(201,168,76,0.2);
+  color: var(--cream);
+}
+
+.card--cream {
+  background: var(--cream);
+  border-color: var(--cream-dark);
+}
+
+.card--outlined {
+  background: transparent;
+  border: 2px solid rgba(201,168,76,0.3);
+  box-shadow: none;
+}
+
+/* ---- Hoverable ---- */
+.card--hoverable {
+  cursor: pointer;
+}
+
+.card--hoverable:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card--hoverable:hover .card__accent {
+  width: 100%;
+}
+
+/* ---- Inner elements ---- */
+.card__accent {
+  height: 4px;
+  width: 40px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 0 2px 2px 0;
+  transition: width 0.4s ease;
+  margin-bottom: 20px;
+}
+
+.card__body {
+  padding: 28px;
+}
+
+.card__header {
+  padding: 28px 28px 0;
+}
+
+.card__footer {
+  padding: 0 28px 28px;
+  margin-top: auto;
+}
+
+.card__icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.card__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.card--navy .card__title {
+  color: var(--gold-light);
+}
+
+.card__description {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.card--navy .card__description {
+  color: var(--text-light);
+}
+
+.card__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--gold-muted);
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.card__divider {
+  height: 1px;
+  background: rgba(10,22,40,0.08);
+  margin: 0;
+}
+
+/* ---- Course Card specific ---- */
+.card--course {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card--course .card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--course .card__footer {
+  padding: 20px 28px 28px;
+}

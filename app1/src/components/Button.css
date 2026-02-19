@@ -1,0 +1,136 @@
+/* =============================================
+   BUTTON COMPONENT STYLES
+   ============================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn__content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Sizes ---- */
+.btn--sm {
+  font-size: 13px;
+  padding: 8px 18px;
+  height: 36px;
+}
+
+.btn--md {
+  font-size: 15px;
+  padding: 12px 28px;
+  height: 48px;
+}
+
+.btn--lg {
+  font-size: 16px;
+  padding: 16px 36px;
+  height: 56px;
+  border-radius: var(--radius-md);
+}
+
+/* ---- Full width ---- */
+.btn--full {
+  width: 100%;
+}
+
+/* ---- Primary (gold) ---- */
+.btn--primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  background-size: 200% auto;
+  color: var(--navy);
+  box-shadow: 0 4px 14px rgba(201,168,76,0.35);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,168,76,0.45);
+}
+
+.btn--primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(201,168,76,0.3);
+}
+
+/* Shine effect */
+.btn__shine {
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,0.18);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.btn--primary:hover .btn__shine {
+  left: 120%;
+}
+
+/* ---- Secondary (outlined navy) ---- */
+.btn--secondary {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--navy);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---- Ghost (on dark bg) ---- */
+.btn--ghost {
+  background: rgba(201,168,76,0.1);
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.3);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background: rgba(201,168,76,0.18);
+  transform: translateY(-1px);
+}
+
+/* ---- Danger ---- */
+.btn--danger {
+  background: #e53e3e;
+  color: white;
+  box-shadow: 0 4px 12px rgba(229,62,62,0.3);
+}
+
+.btn--danger:hover:not(:disabled) {
+  background: #c53030;
+  transform: translateY(-2px);
+}
