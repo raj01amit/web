@@ -7,7 +7,6 @@
   background: var(--navy);
   position: relative;
   overflow: hidden;
-  height: 80vh;
 }
 
 .hero__bg-pattern {
