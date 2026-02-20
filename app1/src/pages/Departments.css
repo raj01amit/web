@@ -1,0 +1,214 @@
+/* =============================================
+   DEPARTMENTS PAGE STYLES
+   ============================================= */
+
+.departments-page {
+  background: var(--cream);
+}
+
+/* ---- HERO ---- */
+.departments-hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding: 64px 24px 80px;
+  text-align: center;
+}
+
+.departments-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(201,168,76,0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.departments-hero__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.departments-hero__subtitle {
+  font-size: 15px;
+  color: rgba(247,243,235,0.65);
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+/* ---- CONTENT ---- */
+.departments-content {
+  max-width: 1200px;
+  margin: -40px auto 80px;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 960px) {
+  .departments-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .departments-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- DEPT CARD ---- */
+.dept-detail-card {
+  box-shadow: var(--shadow-lg) !important;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dept-detail-card:hover {
+  transform: translateY(-8px);
+}
+
+.dept-detail-card__body {
+  padding: 32px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 460px;
+}
+
+.dept-detail-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dept-detail-card__icon {
+  font-size: 52px;
+  filter: drop-shadow(0 4px 12px rgba(201,168,76,0.25));
+}
+
+.dept-detail-card__badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.dept-detail-card__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+/* Color variants */
+.dept-detail-card--blue .dept-detail-card__badge {
+  background: rgba(59,130,246,0.15);
+  color: #2563eb;
+}
+.dept-detail-card--blue:hover {
+  border-color: rgba(59,130,246,0.4);
+}
+
+.dept-detail-card--orange .dept-detail-card__badge {
+  background: rgba(249,115,22,0.15);
+  color: #ea580c;
+}
+.dept-detail-card--orange:hover {
+  border-color: rgba(249,115,22,0.4);
+}
+
+.dept-detail-card--yellow .dept-detail-card__badge {
+  background: rgba(234,179,8,0.15);
+  color: #ca8a04;
+}
+.dept-detail-card--yellow:hover {
+  border-color: rgba(234,179,8,0.4);
+}
+
+.dept-detail-card--purple .dept-detail-card__badge {
+  background: rgba(168,85,247,0.15);
+  color: #9333ea;
+}
+.dept-detail-card--purple:hover {
+  border-color: rgba(168,85,247,0.4);
+}
+
+.dept-detail-card--cyan .dept-detail-card__badge {
+  background: rgba(6,182,212,0.15);
+  color: #0891b2;
+}
+.dept-detail-card--cyan:hover {
+  border-color: rgba(6,182,212,0.4);
+}
+
+.dept-detail-card--green .dept-detail-card__badge {
+  background: rgba(34,197,94,0.15);
+  color: #16a34a;
+}
+.dept-detail-card--green:hover {
+  border-color: rgba(34,197,94,0.4);
+}
+
+/* Highlights */
+.dept-detail-card__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.highlight-tag {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-mid);
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Stats */
+.dept-detail-card__stats {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(10,22,40,0.08);
+}
+
+.dept-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.dept-stat__icon {
+  font-size: 20px;
+}
+
+.dept-stat__value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.dept-stat__label {
+  font-size: 11px;
+  color: var(--text-light);
+  letter-spacing: 0.5px;
+}
+
+.dept-detail-card__btn {
+  margin-top: 8px;
+}

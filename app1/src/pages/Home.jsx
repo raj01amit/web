@@ -7,66 +7,65 @@ import './Home.css';
 const COURSES = [
   {
     id: 1,
-    icon: '💻',
+    icon: '🤖',
     badge: 'Engineering',
-    title: 'B.Tech Computer Science(DS)',
-    description: 'Master algorithms, data structures, AI, and full-stack development with industry mentors.',
+    title: 'CSE (Artificial Intelligence)',
+    description: 'Master AI, machine learning, deep learning, and intelligent systems with cutting-edge labs and industry exposure.',
     duration: '4 Years',
     seats: '60 Seats',
   },
   {
     id: 2,
-    icon: '💻',
+    icon: '📊',
     badge: 'Engineering',
-    title: 'B.Tech Computer Science (AI)',
-    description: 'Master algorithms, data structures, AI, and full-stack development with industry mentors.',
+    title: 'CSE (Data Science)',
+    description: 'Dive into big data, analytics, cloud computing, and business intelligence to become a data-driven professional.',
     duration: '4 Years',
     seats: '60 Seats',
   },
   {
     id: 3,
-    icon: '🌉',
+    icon: '⚡',
     badge: 'Engineering',
-    title: 'B.Tech Civil',
-    description: 'Explore the frontiers of life sciences, genetics and pharmaceutical research.',
-    duration: '3 Years',
-    seats: '120 Seats',
+    title: 'Electrical Engineering',
+    description: 'Explore power systems, electronics, embedded systems, and renewable energy technologies.',
+    duration: '4 Years',
+    seats: '60 Seats',
   },
   {
     id: 4,
-    icon: '📐',
+    icon: '⚙️',
     badge: 'Engineering',
-    title: 'B.Tech Mechanical',
-    description: 'From thermodynamics to robotics — a comprehensive foundation in mechanical systems.',
+    title: 'Mechanical Engineering',
+    description: 'From thermodynamics to robotics, CAD/CAM to CNC machining — build the future of manufacturing.',
     duration: '4 Years',
     seats: '60 Seats',
   },
   {
     id: 5,
-    icon: '⚡',
+    icon: '🏗️',
     badge: 'Engineering',
-    title: 'B.Tech Electrical',
-    description: 'Dive into power systems, electronics, and embedded systems engineering.',
+    title: 'Civil Engineering',
+    description: 'Design sustainable infrastructure, master geotechnical engineering, and model high-rise buildings.',
     duration: '4 Years',
-    seats: '60 Seats',
+    seats: '120 Seats',
   },
   {
     id: 6,
-    icon: '⚡',
+    icon: '🏗️',
     badge: 'Engineering',
-    title: 'B.Tech Mathematics and Computation',
-    description: 'Dive into power systems, electronics, and embedded systems engineering.',
+    title: 'Mathametics and Computation',
+    description: 'Dive computing and programing, and business intelligence to become a mathematics and computation professional.',
     duration: '4 Years',
     seats: '60 Seats',
   },
-  
 ];
 
 const STATS = [
-  { value: '12,000+', label: 'Students Enrolled' },
-  { value: '96%',     label: 'Placement Rate' },
-  { value: '200+',    label: 'Faculty Members' },
-  { value: '50+',     label: 'Research Papers' },
+  { value: '750+', label: 'Students Enrolled' },
+  { value: '28',   label: 'Faculty Members' },
+  { value: '8',    label: 'PhDs on Faculty' },
+  { value: '6',    label: 'B.Tech Programs' },
 ];
 
 function Home() {
@@ -80,14 +79,15 @@ function Home() {
         <div className="hero__bg-pattern" aria-hidden="true" />
         <div className="hero__inner">
           <div className="hero__text animate-fade-up">
-            <span className="hero__eyebrow">Est. 1978 · Accredited by NAAC A+</span>
+            <span className="hero__eyebrow">Est. 2019 · AICTE Approved</span>
             <h1 className="hero__heading">
               Shape Your Future at<br />
-              <span className="hero__heading-highlight">Gec Munger</span>
+              <span className="hero__heading-highlight">GEC Munger</span>
             </h1>
             <p className="hero__subtext">
-              A premier institution offering world-class education, cutting-edge research
-              facilities, and holistic development programmes to prepare you for tomorrow's challenges.
+              Government Engineering College, Munger — A premier institution offering world-class education, 
+              cutting-edge research facilities, and holistic development programmes under Bihar Government's 
+              Saat Nischay vision.
             </p>
             <div className="hero__actions animate-fade-up-delay-1">
               <Button size="lg" onClick={() => navigate('/payment')}>
@@ -104,11 +104,11 @@ function Home() {
           <div className="hero__visual animate-fade-up-delay-2" aria-hidden="true">
             <div className="hero__badge-stack">
               <div className="hero__floating-badge hero__floating-badge--top">
-                🏆 NAAC A+ Accredited
+                🏆 AICTE Approved
               </div>
               <div className="hero__emblem">🎓</div>
               <div className="hero__floating-badge hero__floating-badge--bottom">
-                🌍 Global Alumni Network
+                🌍 Bihar Engineering University
               </div>
             </div>
           </div>

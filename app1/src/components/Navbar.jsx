@@ -19,7 +19,7 @@ function Navbar() {
         <NavLink to="/" className="navbar__logo">
           <span className="navbar__logo-icon">🎓</span>
           <span className="navbar__logo-text">
-            <span className="navbar__logo-name">Government Engineering College Munger</span>
+            <span className="navbar__logo-name">GEC Munger</span>
             <span className="navbar__logo-sub">College Portal</span>
           </span>
         </NavLink>
@@ -35,6 +35,36 @@ function Navbar() {
               }
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `navbar__link ${isActive ? 'navbar__link--active' : ''}`
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/departments"
+              className={({ isActive }) =>
+                `navbar__link ${isActive ? 'navbar__link--active' : ''}`
+              }
+            >
+              Departments
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/facilities"
+              className={({ isActive }) =>
+                `navbar__link ${isActive ? 'navbar__link--active' : ''}`
+              }
+            >
+              Facilities
             </NavLink>
           </li>
           <li>
@@ -65,6 +95,9 @@ function Navbar() {
       {menuOpen && (
         <div className="navbar__mobile-menu">
           <NavLink to="/" end onClick={() => setMenuOpen(false)} className="navbar__mobile-link">Home</NavLink>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)} className="navbar__mobile-link">About</NavLink>
+          <NavLink to="/departments" onClick={() => setMenuOpen(false)} className="navbar__mobile-link">Departments</NavLink>
+          <NavLink to="/facilities" onClick={() => setMenuOpen(false)} className="navbar__mobile-link">Facilities</NavLink>
           <NavLink to="/payment" onClick={() => setMenuOpen(false)} className="navbar__mobile-link">Payment</NavLink>
         </div>
       )}
